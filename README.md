@@ -44,6 +44,5 @@ This project is a full end-to-end data science workflow for analyzing e-commerce
   ✔️ Business analysts for KPI monitoring
   ✔️ Data science students to learn end-to-end ML pipelines
     
-    Sidebar controls: dataset upload, forecast horizon, model choice.
 
-Interactive Plotly charts for real-time insights.
+
