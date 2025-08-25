@@ -2,6 +2,7 @@
 This project is a full end-to-end data science workflow for analyzing e-commerce transactions, segmenting customers, and predicting future sales using Machine Learning & Time Series models. It combines Python scripts, Jupyter notebooks, and a Streamlit app into a single pipeline, reflecting real industry practices.
 
 🚀 Features
+
 🔍 Data Processing
 
   Cleans raw Kaggle UK Online Retail dataset (canceled orders, missing IDs, etc.).
