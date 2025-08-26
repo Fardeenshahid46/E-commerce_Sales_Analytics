@@ -8,15 +8,15 @@ from src import forecast as fc
 st.set_page_config(page_title="📊 E-commerce Sales Analytics",page_icon="🛒",layout="wide")
 
 @st.cache_data
-def load_data(path="sample_data.csv"):
+def load_data(path="data_sample.csv"):
     df = dp.load_data(path)
     df = dp.clean_and_feature_engineer(df)
     return df
 
 st.sidebar.title("⚙️ Controls")
-uploaded=st.sidebar.file_uploader("📂 Upload Kaggle `sample_data.csv`", type=["csv"])
+uploaded=st.sidebar.file_uploader("📂 Upload Kaggle `data_sample.csv`", type=["csv"])
 if uploaded is None:
-    st.sidebar.info("Using default `sample_data.csv` in project root")
+    st.sidebar.info("Using default `data_sample.csv` in project root")
     df=load_data()
 else:
     df=load_data(path=uploaded) 
@@ -77,3 +77,4 @@ with tab3:
                 figp = px.line(forecast, x="ds", y="yhat", title="Prophet Forecast", template="plotly_white")
 
                 st.plotly_chart(figp, use_container_width=True)    
+
