@@ -1,7 +1,7 @@
 import pandas as pd
 
 CONFIG = {
-    'kaggle_path': 'data_sample.csv'
+    'kaggle_path': './data_sample.csv'
 }
 
 def load_data(path=None):
@@ -42,3 +42,4 @@ if __name__ == "__main__":
     df = clean_and_feature_engineer(df)
     print("Rows after cleaning:", len(df))
     print(df.head())
+
